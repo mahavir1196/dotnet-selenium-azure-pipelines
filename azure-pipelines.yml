@@ -21,8 +21,6 @@ steps:
 - task: CBTMain@0
   inputs:
     connectedServiceName: 'CBT'
-    # cbtTunnel: true
-    # cbtTunnelOptions: ''
 
 - task: DotNetCoreCLI@2
   displayName: 'Build the Project'
