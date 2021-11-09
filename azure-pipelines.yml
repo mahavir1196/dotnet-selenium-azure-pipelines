@@ -1,0 +1,35 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: UseDotNet@2
+  displayName: 'Install .NET Core SDK'
+  inputs:
+    version: 5.0.x
+    performMultiLevelLookup: true
+    includePreviewVersions: true
+    
+- task: DotNetCoreCLI@2
+  displayName: 'Restore Nuget Packages'
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
+
+- task: CBTMain@0
+  inputs:
+    connectedServiceName: 'CBT'
+    # cbtTunnel: true
+    # cbtTunnelOptions: ''
+
+- task: DotNetCoreCLI@2
+  displayName: 'Build the Project'
+  inputs:
+    command: 'build'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Run the Project!'
+  inputs:
+    command: 'run'
