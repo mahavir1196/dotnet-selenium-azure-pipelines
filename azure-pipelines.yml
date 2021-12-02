@@ -18,9 +18,13 @@ steps:
     command: 'restore'
     feedsToUse: 'select'
 
+# - task: CBTMain@0
+#   inputs:
+#     connectedServiceName: 'CBT'
 - task: CBTMain@0
   inputs:
     connectedServiceName: 'CBT'
+    cbtTunnel: true
 
 - task: DotNetCoreCLI@2
   displayName: 'Build the Project'
