@@ -21,7 +21,7 @@ steps:
 # - task: CBTMain@0
 #   inputs:
 #     connectedServiceName: 'CBT' MahavirsinhChhasatiya.cbt-tasks.cbt-main.CBTMain must be in the format <NAME>@<MAJOR_VERSION> or <NAME>@<MAJOR_VERSION.MINOR_VERSION.PATCH_VERSION>. For example MyTask@2 or MyTask@2.3.1. 
-- task: CBTMain@1.0.1
+- task: MahavirsinhChhasatiya.cbt-tasks.cbt-main.CBTMain@0
   inputs:
     connectedServiceName: 'CBT2'
     cbtTunnel: true
