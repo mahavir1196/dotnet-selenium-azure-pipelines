@@ -20,8 +20,8 @@ steps:
 
 # - task: CBTMain@0
 #   inputs:
-#     connectedServiceName: 'CBT'
-- task: CBTMain@0
+#     connectedServiceName: 'CBT' MahavirsinhChhasatiya.cbt-tasks.cbt-main.CBTMain
+- task: MahavirsinhChhasatiya.cbt-tasks.cbt-main.CBTMain
   inputs:
     connectedServiceName: 'CBT2'
     cbtTunnel: true
