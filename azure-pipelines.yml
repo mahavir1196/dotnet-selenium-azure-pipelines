@@ -23,9 +23,10 @@ steps:
 #     connectedServiceName: 'CBT'
 - task: CBTMain@0
   inputs:
-    connectedServiceName: 'CBT'
+    connectedServiceName: 'CBT2'
     cbtTunnel: true
     cbtTunnelOptions: 'acceptAllCerts'
+    cbtWindows: true
 
 - task: DotNetCoreCLI@2
   displayName: 'Build the Project'
