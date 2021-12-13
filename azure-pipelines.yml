@@ -27,7 +27,7 @@ steps:
 #     cbtTunnel: true
 #     cbtTunnelOptions: 'acceptAllCerts'
 
-- task: CBTMain@0
+- task: MahavirsinhChhasatiya.CBTMain@0
   inputs:
     connectedServiceName: 'CBT2'
     cbtTunnel: true
