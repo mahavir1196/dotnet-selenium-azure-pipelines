@@ -27,7 +27,6 @@ steps:
     cbtTunnel: true
     cbtTunnelOptions: 'acceptAllCerts'
     cbtWindows: true
-
 - task: DotNetCoreCLI@2
   displayName: 'Build the Project'
   inputs:
