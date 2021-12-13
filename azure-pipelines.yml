@@ -21,8 +21,7 @@ steps:
 # - task: CBTMain@0
 #   inputs:
 #     connectedServiceName: 'CBT'
-
-- task: MahavirsinhChhasatiya.cbt-tasks.cbt-main.CBTMain
+- task: CBTMain@0
   inputs:
     connectedServiceName: 'CBT2'
     cbtTunnel: true
